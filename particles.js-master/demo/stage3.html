@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+  <Style>
+    html,
+    body {
+
+      background: #000;
+    }
+
+
+    .rnOuter {
+      background: hsl(0, 80%, 38%);
+      overflow: hidden;
+      position: relative;
+      height: 100vh;
+      Z-index: 11;
+    }
+
+    .rnInner {
+      width: 100%;
+      position: absolute;
+      top: -10%;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      margin: auto;
+      -webkit-transform-style: preserve-3d;
+      transform-style: preserve-3d;
+      -webkit-transition: -webkit-transform 6s ease;
+      transition: -webkit-transform 6s ease;
+      transition: transform 6s ease;
+      transition: transform 6s ease, -webkit-transform 6s ease;
+      -webkit-transform-origin: -120% top;
+      transform-origin: -120% top;
+      Z-index: ;
+    }
+
+    .rnUnit {
+      width: 8vw;
+      height: 120vh;
+      background: -moz-linear-gradient(right, rgba(0, 0, 0, 0), #710000, rgba(0, 0, 0, 0.7), #710000), -moz-linear-gradient(right, #710000, #710000, rgba(113, 0, 0, 0.4));
+      background: -o-linear-gradient(right, rgba(0, 0, 0, 0), #710000, rgba(0, 0, 0, 0.7), #710000), -o-linear-gradient(right, #710000, #710000, rgba(113, 0, 0, 0.4));
+      background: -webkit-linear-gradient(right, rgba(0, 0, 0, 0), #710000, rgba(0, 0, 0, 0.7), #710000), -webkit-linear-gradient(right, #710000, #710000, rgba(113, 0, 0, 0.4));
+      background: linear-gradient(to left, rgba(0, 0, 0, 0), #710000, rgba(0, 0, 0, 0.7), #710000), linear-gradient(to left, #710000, #710000, rgba(113, 0, 0, 0.4));
+      background-size: 100% 100%;
+      display: inline-block;
+      -webkit-transform-origin: 0 0%;
+      transform-origin: 0 0%;
+      -webkit-transform: rotate(3deg);
+      transform: rotate(3deg);
+      -webkit-animation: rnUnit 2s ease infinite;
+      animation: rnUnit 2s ease infinite;
+      Z-index: ;
+
+    }
+
+    @-webkit-keyframes rnUnit {
+      50% {
+        -webkit-transform: rotate(-3deg);
+        transform: rotate(-3deg);
+      }
+    }
+
+    @keyframes rnUnit {
+      50% {
+        -webkit-transform: rotate(-3deg);
+        transform: rotate(-3deg);
+      }
+    }
+
+    .rnUnit:nth-child(1) {
+      -webkit-animation-delay: -0.1s;
+      animation-delay: -0.1s;
+    }
+
+    .rnUnit:nth-child(2) {
+      -webkit-animation-delay: -0.2s;
+      animation-delay: -0.2s;
+    }
+
+    .rnUnit:nth-child(3) {
+      -webkit-animation-delay: -0.3s;
+      animation-delay: -0.3s;
+    }
+
+    .rnUnit:nth-child(4) {
+      -webkit-animation-delay: -0.4s;
+      animation-delay: -0.4s;
+    }
+
+    .rnUnit:nth-child(5) {
+      -webkit-animation-delay: -0.5s;
+      animation-delay: -0.5s;
+    }
+
+    .rnUnit:nth-child(6) {
+      -webkit-animation-delay: -0.6s;
+      animation-delay: -0.6s;
+    }
+
+    .rnUnit:nth-child(7) {
+      -webkit-animation-delay: -0.7s;
+      animation-delay: -0.7s;
+    }
+
+    .rnUnit:nth-child(8) {
+      -webkit-animation-delay: -0.8s;
+      animation-delay: -0.8s;
+    }
+
+    .rnUnit:nth-child(9) {
+      -webkit-animation-delay: -0.9s;
+      animation-delay: -0.9s;
+    }
+
+    .rnUnit:nth-child(10) {
+      -webkit-animation-delay: -1s;
+      animation-delay: -1s;
+    }
+
+    .aoTable {
+      display: table;
+      width: 100%;
+      height: 100vh;
+      Z-index: 11;
+      text-align: center;
+    }
+
+    .aoTableCell {
+      color: #fff;
+      display: table-cell;
+      vertical-align: middle;
+      -webkit-transition: color 3s ease;
+      transition: color 3s ease;
+      background: transparent;
+
+    }
+
+    .rnOuter:hover .rnInner {
+      -webkit-transform-origin: -120% top;
+      transform-origin: -120% top;
+      -webkit-transform: scaleX(0);
+      transform: scaleX(0);
+      background: transparent;
+      Z-index: 11;
+    }
+
+    .rnOuter:hover .aoTableCell {
+      background: transparent;
+      Z-index: 11;
+      color: white;
+    }
+
+    body,
+    html {
+      margin: 0;
+      padding: 0;
+    }
+
+    #particles-js {
+      width: 100%;
+      height: 100vh;
+      top: 0;
+      left: 0;
+      position: absolute;
+      background-color: rgba(0, 0, 0, 0.1);
+      background-image: url('');
+      background-size: 100vh;
+      background-repeat: no-repeat;
+      z-index: -1;
+    }
+
+    .btn {
+      z-index: 99999999999999999;
+      box-sizing: border-box;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      appearance: none;
+      background-color: transparent;
+      border: 2px solid red;
+      border-radius: 0.6em;
+      color: #000;
+      cursor: pointer;
+      align-self: center;
+      font-size: 1rem;
+      font-weight: 400;
+      line-height: 1;
+      margin: 20px;
+      padding: 1.2em 2.8em;
+      text-decoration: none;
+      text-align: center;
+      text-transform: uppercase;
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 700;
+    }
+
+    .btn:hover,
+    .btn:focus {
+      color: #fff;
+      outline: 0;
+    }
+
+    .r {
+      border-color: red;
+      color: #000;
+      font-weight: 700;
+      box-shadow: 0 0 40px 40px red inset, 0 0 0 0 red;
+      -webkit-transition: all 150ms ease-in-out;
+      transition: all 150ms ease-in-out;
+    }
+
+    .r:hover {
+      box-shadow: 0 0 10px 0 red inset, 0 0 10px 4px red;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="rxWorld overlay1 " onmouseenter="playAudio()">
+
+    <section class="rnOuter " style="background:#000;">
+      <div id="particles-js">
+      </div>
+
+      <section class="aoTable">
+        <div class="aoTableCell">
+          <p style="font-size:5em;font-family: 'Source Sans Pro', sans-serif;  text-shadow:
+              -.1vw 0vw 10vw #fff, -.2vw 0vw 10vw #16FA19, -.4vw 0vw 10vw #fff;
+          ">VIGHNANA <span style="font-size:1.5em;color:red;">1.0</span></p>
+          <p style="font-size:2em;">A Project Expo</p>
+          <button class="btn r">Visit Website</button>
+        </div>
+      </section>
+
+      <div class='rnInner'>
+        <div class='rnUnit'></div>
+        <!--
+        -->
+        <div class='rnUnit'></div>
+        <!--
+        -->
+        <div class='rnUnit'></div>
+        <!--
+        -->
+        <div class='rnUnit'></div>
+        <!--
+        -->
+        <div class='rnUnit'></div>
+        <!--
+        -->
+        <div class='rnUnit'></div>
+        <!--
+        -->
+        <div class='rnUnit'></div>
+        <!--
+        -->
+        <div class='rnUnit'></div>
+        <!--
+        -->
+        <div class='rnUnit'></div>
+        <!--
+        -->
+        <div class='rnUnit'></div>
+        <!--
+        -->
+        <div class='rnUnit'></div>
+        <!--
+        -->
+        <div class='rnUnit'></div>
+        <!--
+        -->
+      </div>
+    </section>
+
+
+  </div>
+  <audio id="audioID" autoplay>
+    <source src="aaa.mp3" type="audio/ogg">
+    <source src="aaa.mp3" type="audio/mpeg">
+  </audio>
+  <script src="../particles.js"></script>
+  <script src="js/app.js"></script>
+  <script>
+    var audio1 = document.getElementById("audioID");
+
+
+    function playAudio() {
+      audio1.play();
+    }
+  </script>
+
+  <script src="js/lib/stats.js"></script>
+
+</body>
+
+</html>
